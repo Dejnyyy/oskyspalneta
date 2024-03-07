@@ -87,7 +87,6 @@ class Particle {
 
     this.ax += Math.cos(angle);
     this.ay += Math.sin(angle);
-
   }
 
   updatePrev() {
@@ -127,7 +126,7 @@ Setup
 
 function setup() {
     let canvasWidth = 2 * windowWidth;
-    let canvasHeight = windowHeight;
+    let canvasHeight = 1.5*  windowHeight;
     let canvasTop = 890; // Umístění plátna na spodní část okna
     
     createCanvas(canvasWidth, canvasHeight).position(0, canvasTop).style;
@@ -137,8 +136,6 @@ function setup() {
     }
     strokeWeight(opt.strokeWeight);
 }
-
-
 
 /*--------------------
 Draw
@@ -157,7 +154,3 @@ function draw() {
 /*--------------------
 Resize
 --------------------*/
-
-
-
-
